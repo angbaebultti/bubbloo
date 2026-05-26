@@ -1,1 +1,58 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: 'MaruBuri';
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/MaruBuri-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MaruBuri';
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/MaruBuri-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MaruBuri';
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/MaruBuri-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MaruBuri';
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/MaruBuri-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'MaruBuri';
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('/fonts/MaruBuri-Bold.ttf') format('truetype');
+}
+
+@theme {
+  --font-sans: 'MaruBuri', serif;
+  --animate-spin-slow: spin-slow 4s linear infinite;
+  --animate-float: float 3s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50%       { transform: translateY(-14px); }
+}
+
+@layer base {
+  body {
+    font-family: 'MaruBuri', serif;
+  }
+}

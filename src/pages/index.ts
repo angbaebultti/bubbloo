@@ -1,1 +1,7 @@
+export { default as AwakePage } from './AwakePage'
+export { default as NamingPage } from './NamingPage'
+export { default as EmailVerifyPage } from './EmailVerifyPage'
 export { default as HomePage } from './HomePage'
+export { default as LoadingPage } from './LoadingPage'
+export { default as SignUpPage } from './SignUpPage'
+export { default as SplashPage } from './SplashPage'
