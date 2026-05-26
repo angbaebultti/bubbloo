@@ -1,4 +1,5 @@
 export { default as AwakePage } from './AwakePage'
+export { default as BubbleSelectPage } from './BubbleSelectPage'
 export { default as NamingPage } from './NamingPage'
 export { default as EmailVerifyPage } from './EmailVerifyPage'
 export { default as HomePage } from './HomePage'

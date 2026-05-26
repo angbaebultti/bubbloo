@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { SplashPage, HomePage, SignUpPage, EmailVerifyPage, LoadingPage, AwakePage, NamingPage } from '@/pages'
+import { SplashPage, HomePage, SignUpPage, EmailVerifyPage, LoadingPage, AwakePage, NamingPage, BubbleSelectPage } from '@/pages'
 
 export default function App() {
   return (
@@ -12,6 +12,7 @@ export default function App() {
         <Route path="/loading" element={<LoadingPage />} />
         <Route path="/awake" element={<AwakePage />} />
         <Route path="/naming" element={<NamingPage />} />
+        <Route path="/bubble-select" element={<BubbleSelectPage />} />
       </Routes>
     </BrowserRouter>
   )

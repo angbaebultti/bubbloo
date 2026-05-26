@@ -8,7 +8,7 @@ export default function LoadingPage() {
   const navigate = useNavigate()
 
   useEffect(() => {
-    const timer = setTimeout(() => navigate('/awake'), 8000)
+    const timer = setTimeout(() => navigate('/awake'), 2000)
     return () => clearTimeout(timer)
   }, [navigate])
 
